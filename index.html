@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <title>Сказка о Нефилине</title>
@@ -9,10 +9,25 @@
 
 <body>
 
+<section class="loader">
+	<div class="loader-book">
+		<div class="loader-book-midle-line">
+			<div></div>
+		</div>
+		<div class="loader-book-midle-line">
+			<div></div>
+		</div>
+		<div class="loader-book-midle-line">
+			<div></div>
+		</div>
+	</div>
+	<div class="loader-text">Loading</div>
+</section>
+
 <header>
 	<div class="tittle">
 		<h1>Сказка о Нефилине</h1>
-		<h2>Автор — <a href="http://vk.com/sheva_r6">Шевченко Дмитрий</a></h2>
+		<h2>Автор — <a href="http://vk.com/seva_r6">Шевченко Дмитрий</a></h2>
 	</div>
 </header>
 
@@ -86,5 +101,10 @@
 
 
 <button id="top-button"></button>
+<script>
+	$(window).on("load",function(){
+    $(".loader").delay( 5000 ).fadeOut("slow");
+});
+</script>
 <script type="text/javascript" src="script.js"></script>
 </body>
